@@ -1,0 +1,368 @@
+Turbo Dump  Version 4.2.16.1 Copyright (c) 1988, 1996 Borland International
+                    Display of File PBNODE.EXE
+
+Old Executable Header
+
+DOS File Size                                       5200h  ( 20992. )
+Load Image Size                                      450h  (  1104. )
+Relocation Table entry count                          0000h  (     0. )
+Relocation Table address                              0040h  (    64. )
+Size of header record      (in paragraphs)            0004h  (     4. )
+Minimum Memory Requirement (in paragraphs)            0000h  (     0. )
+Maximum Memory Requirement (in paragraphs)            FFFFh  ( 65535. )
+File load checksum                                    0000h  (     0. )
+Overlay Number                                        0000h  (     0. )
+
+Initial Stack Segment  (SS:SP)			  0000:00B8
+Program Entry Point    (CS:IP)			  0000:0000
+
+
+Portable Executable (PE) File
+
+Header base: 00000080
+
+CPU type                 80386
+Flags                    10E [ executable backwards 32bit ]
+DLL flags                0000 [ ]
+Linker Version           3.0
+Time stamp               32D91668
+O/S Version              4.0
+User Version             0.0
+Subsystem Version        4.0
+Subsystem                0002 [ Windows GUI ]
+Object count             00000006
+Symbols offset           00000000
+Symbols count            00000000
+Optional header size     00E0
+Magic #                  10B
+Code size                00002000
+Init Data size           00003000
+Uninit Data size         00000000
+Entry RVA                00002C40
+Image base               00400000
+Code base                00001000
+Data base                00003000
+Object/File align        00001000/00000200
+Reserved                 00000000
+Image size               00008000
+Header size              00000400
+Checksum                 00000000
+Stack reserve/commit     00100000/00001000
+Heap reserve/commit      00100000/00001000
+Number interesting RVAs  00000010
+Name                   RVA       Size  
+------------------  --------  --------
+Exports             00000000  00000000
+Imports             00005000  000000A0
+Resources           00006000  00000D04
+Exceptions          00000000  00000000
+Security            00000000  00000000
+Fixups              00007000  000004D8
+Debug               00000000  00000000
+Description         00000000  00000000
+TLS                 00000000  00000000
+Callbacks           00000000  00000000
+reserved            00000000  00000000
+reserved            00005364  000002C4
+reserved            00000000  00000000
+reserved            00000000  00000000
+reserved            00000000  00000000
+
+Object table:
+#   Name      VirtSize    RVA     PhysSize  Phys off  Flags   
+--  --------  --------  --------  --------  --------  --------
+01  .text     00001EB2  00001000  00002000  00000400  60000020 [CER]
+02  .rdata    000009B8  00003000  00000A00  00002400  40000040 [IR]
+03  .data     00000224  00004000  00000200  00002E00  C0000040 [IRW]
+04  .idata    0000090C  00005000  00000A00  00003000  C0000040 [IRW]
+05  .rsrc     00000D04  00006000  00000E00  00003A00  40000040 [IR]
+06  .reloc    000009D6  00007000  00000A00  00004800  42000040 [IDR]
+
+Key to section flags:
+  C - contains code
+  D - discardable
+  E - executable
+  I - contains initialized data
+  R - readable
+  W - writeable
+
+Imports from PBSess.dll
+    ?Run@@YAHJ@Z
+
+Imports from MFC40.DLL
+    1540
+    3906
+    3259
+    721
+    504
+    731
+    5506
+    729
+    2299
+    1060
+    1100
+    5363
+    3580
+    4096
+    3890
+    4657
+    2086
+    4608
+    5647
+    3837
+    4704
+    3314
+    4296
+    3922
+    2323
+    1785
+    3578
+    5649
+    4510
+    1494
+    4677
+    2140
+    1850
+    4691
+    4101
+    3262
+    2081
+    2515
+    2388
+    2091
+    2676
+    4545
+    4548
+    3947
+    3790
+    2913
+    4463
+    862
+    4845
+    2962
+    2528
+    2527
+    3647
+    3577
+    3268
+    4696
+    3340
+    2694
+    3917
+    4668
+    3909
+    3157
+    600
+    351
+    3731
+    3938
+    5296
+    4447
+    5490
+    5653
+    1814
+    317
+    2201
+    346
+    570
+    3185
+    3153
+    3158
+    724
+    1426
+    5648
+    3762
+    662
+    5467
+    5205
+    421
+    5106
+    2115
+    980
+    3761
+    4084
+    4086
+    3346
+    3345
+    2696
+    2620
+    2845
+    2744
+    3945
+    2843
+    2754
+    2617
+    5053
+    4703
+    4719
+    4165
+    3579
+    2390
+    4715
+    4713
+    2909
+    2097
+    4627
+    965
+    3431
+    5070
+    2197
+    2234
+    3963
+    2324
+    1445
+    4653
+    509
+    1368
+    1035
+
+Imports from MSVCRT40.dll
+    __set_app_type(hint = 0224)
+    __p__fmode(hint = 0214)
+    _adjust_fdiv(hint = 023d)
+    __setusermatherr(hint = 0225)
+    __getmainargs(hint = 0202)
+    _initterm(hint = 02a7)
+    _except_handler3(hint = 0266)
+    __p__commode(hint = 0211)
+    __p__acmdln(hint = 020f)
+    _exit(hint = 026f)
+    _onexit(hint = 031b)
+    __dllonexit(hint = 01ff)
+    exit(hint = 03d6)
+    memmove(hint = 0425)
+    _XcptFilter(hint = 01f6)
+    _setmbcp(hint = 033b)
+    __CxxFrameHandler(hint = 01f7)
+    _controlfp(hint = 0254)
+    _purecall(hint = 0324)
+
+Imports from KERNEL32.dll
+    SuspendThread(hint = 021a)
+    WaitForSingleObject(hint = 023e)
+    SetEvent(hint = 01f3)
+    CloseHandle(hint = 0016)
+    CreateEventA(hint = 0029)
+    Sleep(hint = 0218)
+    GetVersion(hint = 0137)
+    GetModuleHandleA(hint = 00eb)
+    GetStartupInfoA(hint = 0114)
+
+Imports from USER32.dll
+    HideCaret(hint = 013d)
+    SetCaretPos(hint = 01d2)
+    DestroyCaret(hint = 0082)
+    PostMessageA(hint = 01a3)
+    CreateCaret(hint = 0041)
+    ShowCaret(hint = 0211)
+    CopyRect(hint = 003d)
+    GetClientRect(hint = 00dc)
+    UpdateWindow(hint = 0237)
+    EnableWindow(hint = 00ab)
+    GetParent(hint = 0115)
+    SetActiveWindow(hint = 01cf)
+
+Imports from GDI32.dll
+    GetObjectA(hint = 00de)
+    CreateFontA(hint = 002b)
+    ExtTextOutA(hint = 0063)
+    SelectObject(hint = 013c)
+
+Imports from WSOCK32.dll
+
+Resources:
+Type          Name                   Lang Id
+--------------------------------------------
+[0 named entries, 6 ID entries]
+3  (next directory @00000040)
+
+              [0 named entries, 2 ID entries]
+              1  (next directory @000000E0)
+
+                                     [0 named entries, 1 ID entries]
+                                     1033  (data @000001A0)
+                                         Offset:    00006220
+                                         Size:      000002E8
+                                         Code Page: 00000000
+                                         Reserved:  00000000
+
+              2  (next directory @000000F8)
+
+                                     [0 named entries, 1 ID entries]
+                                     1033  (data @000001B0)
+                                         Offset:    00006508
+                                         Size:      00000128
+                                         Code Page: 00000000
+                                         Reserved:  00000000
+
+4  (next directory @00000060)
+
+              [0 named entries, 1 ID entries]
+              130  (next directory @00000110)
+
+                                     [0 named entries, 1 ID entries]
+                                     1033  (data @000001C0)
+                                         Offset:    00006B04
+                                         Size:      00000132
+                                         Code Page: 00000000
+                                         Reserved:  00000000
+
+5  (next directory @00000078)
+
+              [0 named entries, 1 ID entries]
+              100  (next directory @00000128)
+
+                                     [0 named entries, 1 ID entries]
+                                     1033  (data @000001D0)
+                                         Offset:    00006654
+                                         Size:      00000166
+                                         Code Page: 00000000
+                                         Reserved:  00000000
+
+6  (next directory @00000090)
+
+              [0 named entries, 2 ID entries]
+              7  (next directory @00000140)
+
+                                     [0 named entries, 1 ID entries]
+                                     1033  (data @000001E0)
+                                         Offset:    00006C38
+                                         Size:      00000090
+                                         Code Page: 00000000
+                                         Reserved:  00000000
+
+              9  (next directory @00000158)
+
+                                     [0 named entries, 1 ID entries]
+                                     1033  (data @000001F0)
+                                         Offset:    00006CC8
+                                         Size:      0000003C
+                                         Code Page: 00000000
+                                         Reserved:  00000000
+
+14  (next directory @000000B0)
+
+              [0 named entries, 1 ID entries]
+              130  (next directory @00000170)
+
+                                     [0 named entries, 1 ID entries]
+                                     1033  (data @00000200)
+                                         Offset:    00006630
+                                         Size:      00000022
+                                         Code Page: 00000000
+                                         Reserved:  00000000
+
+16  (next directory @000000C8)
+
+              [0 named entries, 1 ID entries]
+              1  (next directory @00000188)
+
+                                     [0 named entries, 1 ID entries]
+                                     1033  (data @00000210)
+                                         Offset:    000067BC
+                                         Size:      00000348
+                                         Code Page: 00000000
+                                         Reserved:  00000000
+
+
+
