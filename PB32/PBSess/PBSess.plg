@@ -1,0 +1,196 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PBSess - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\TEMP\RSPD4.tmp" with contents
+[
+/nologo /Zp1 /MT /W3 /GX /O2 /I "\DEV\PBLIB" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fo".\Release/" /Fd".\Release/" /FD /c 
+"F:\Dev\PB32\PBSess\AKA.CPP"
+"F:\Dev\PB32\PBSess\BULLETIN.CPP"
+"F:\Dev\PB32\PBSess\CDROM.CPP"
+"F:\Dev\PB32\PBSess\COMBINED.CPP"
+"F:\Dev\PB32\PBSess\DATEFMT.CPP"
+"F:\Dev\PB32\PBSess\delay.cpp"
+"F:\Dev\PB32\PBSess\DL.CPP"
+"F:\Dev\PB32\PBSess\FILEAREA.CPP"
+"F:\Dev\PB32\PBSess\GLOBAL.CPP"
+"F:\Dev\PB32\PBSess\HUDSON.CPP"
+"F:\Dev\PB32\PBSess\INPDATE.CPP"
+"F:\Dev\PB32\PBSess\INTRO.CPP"
+"F:\Dev\PB32\PBSess\IO.CPP"
+"F:\Dev\PB32\PBSess\JAM.CPP"
+"F:\Dev\PB32\PBSess\LANGUAGE.CPP"
+"F:\Dev\PB32\PBSess\LIMIT.CPP"
+"F:\Dev\PB32\PBSess\LISTFILE.CPP"
+"F:\Dev\PB32\PBSess\LOGIN.CPP"
+"F:\Dev\PB32\PBSess\MARK.CPP"
+"F:\Dev\PB32\PBSess\MENUPROC.CPP"
+"F:\Dev\PB32\PBSess\MSG.CPP"
+"F:\Dev\PB32\PBSess\MSGAREA.CPP"
+"F:\Dev\PB32\PBSess\MSGBASE.CPP"
+"F:\Dev\PB32\PBSess\MSGDEL.CPP"
+"F:\Dev\PB32\PBSess\MSGED.CPP"
+"F:\Dev\PB32\PBSess\MSGEXPRT.CPP"
+"F:\Dev\PB32\PBSess\MSGFIND.CPP"
+"F:\Dev\PB32\PBSess\MSGFWD.CPP"
+"F:\Dev\PB32\PBSess\MSGMOVE.CPP"
+"F:\Dev\PB32\PBSess\NODELIST.CPP"
+"F:\Dev\PB32\PBSess\POSTMSG.CPP"
+"F:\Dev\PB32\PBSess\PROBOARD.CPP"
+"F:\Dev\PB32\PBSess\PROTOCOL.CPP"
+"F:\Dev\PB32\PBSess\QUESTION.CPP"
+"F:\Dev\PB32\PBSess\RACRC.CPP"
+"F:\Dev\PB32\PBSess\READCFG.CPP"
+"F:\Dev\PB32\PBSess\READMSG.CPP"
+"F:\Dev\PB32\PBSess\REPLYMSG.CPP"
+"F:\Dev\PB32\PBSess\RUNPEX.CPP"
+"F:\Dev\PB32\PBSess\SELLANG.CPP"
+"F:\Dev\PB32\PBSess\SETAREA.CPP"
+"F:\Dev\PB32\PBSess\SHELL.CPP"
+"F:\Dev\PB32\PBSess\SHOWANS.CPP"
+"F:\Dev\PB32\PBSess\SHOWMSG.CPP"
+"F:\Dev\PB32\PBSess\STRVAR.CPP"
+"F:\Dev\PB32\PBSess\TAG.CPP"
+"F:\Dev\PB32\PBSess\TAG_RW.CPP"
+"F:\Dev\PB32\PBSess\TIMER.CPP"
+"F:\Dev\PB32\PBSess\UL.CPP"
+"F:\Dev\PB32\PBSess\USERSET.CPP"
+"F:\Dev\PB32\PBSess\WORDWRAP.CPP"
+"F:\Dev\PB32\PBSess\WRITEMSG.CPP"
+]
+Creating command line "cl.exe @D:\TEMP\RSPD4.tmp" 
+Creating temporary file "D:\TEMP\RSPD5.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib \dev\pblib\release\pblib.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"D:\PB32/PBSess.pdb" /machine:I386 /out:"D:\PB32/PBSess.dll" /implib:"D:\PB32/PBSess.lib" 
+.\Release\AKA.OBJ
+.\Release\BULLETIN.OBJ
+.\Release\CDROM.OBJ
+.\Release\COMBINED.OBJ
+.\Release\DATEFMT.OBJ
+.\Release\delay.obj
+.\Release\DL.OBJ
+.\Release\FILEAREA.OBJ
+.\Release\GLOBAL.OBJ
+.\Release\HUDSON.OBJ
+.\Release\INPDATE.OBJ
+.\Release\INTRO.OBJ
+.\Release\IO.OBJ
+.\Release\JAM.OBJ
+.\Release\LANGUAGE.OBJ
+.\Release\LIMIT.OBJ
+.\Release\LISTFILE.OBJ
+.\Release\LOGIN.OBJ
+.\Release\MARK.OBJ
+.\Release\MENUPROC.OBJ
+.\Release\MSG.OBJ
+.\Release\MSGAREA.OBJ
+.\Release\MSGBASE.OBJ
+.\Release\MSGDEL.OBJ
+.\Release\MSGED.OBJ
+.\Release\MSGEXPRT.OBJ
+.\Release\MSGFIND.OBJ
+.\Release\MSGFWD.OBJ
+.\Release\MSGMOVE.OBJ
+.\Release\NODELIST.OBJ
+.\Release\POSTMSG.OBJ
+.\Release\PROBOARD.OBJ
+.\Release\PROTOCOL.OBJ
+.\Release\QUESTION.OBJ
+.\Release\RACRC.OBJ
+.\Release\READCFG.OBJ
+.\Release\READMSG.OBJ
+.\Release\REPLYMSG.OBJ
+.\Release\RUNPEX.OBJ
+.\Release\SELLANG.OBJ
+.\Release\SETAREA.OBJ
+.\Release\SHELL.OBJ
+.\Release\SHOWANS.OBJ
+.\Release\SHOWMSG.OBJ
+.\Release\STRVAR.OBJ
+.\Release\TAG.OBJ
+.\Release\TAG_RW.OBJ
+.\Release\TIMER.OBJ
+.\Release\UL.OBJ
+.\Release\USERSET.OBJ
+.\Release\WORDWRAP.OBJ
+.\Release\WRITEMSG.OBJ
+]
+Creating command line "link.exe @D:\TEMP\RSPD5.tmp"
+<h3>Output Window</h3>
+Compiling...
+AKA.CPP
+BULLETIN.CPP
+CDROM.CPP
+COMBINED.CPP
+DATEFMT.CPP
+delay.cpp
+DL.CPP
+FILEAREA.CPP
+GLOBAL.CPP
+HUDSON.CPP
+INPDATE.CPP
+INTRO.CPP
+IO.CPP
+JAM.CPP
+LANGUAGE.CPP
+LIMIT.CPP
+LISTFILE.CPP
+LOGIN.CPP
+MARK.CPP
+MENUPROC.CPP
+Generating Code...
+Compiling...
+MSG.CPP
+MSGAREA.CPP
+MSGBASE.CPP
+MSGDEL.CPP
+MSGED.CPP
+MSGEXPRT.CPP
+MSGFIND.CPP
+MSGFWD.CPP
+MSGMOVE.CPP
+NODELIST.CPP
+POSTMSG.CPP
+PROBOARD.CPP
+PROTOCOL.CPP
+QUESTION.CPP
+RACRC.CPP
+READCFG.CPP
+READMSG.CPP
+F:\Dev\PB32\PBSess\READMSG.CPP(304) : warning C4018: '==' : signed/unsigned mismatch
+F:\Dev\PB32\PBSess\READMSG.CPP(310) : warning C4018: '>' : signed/unsigned mismatch
+REPLYMSG.CPP
+F:\Dev\PB32\PBSess\REPLYMSG.CPP(128) : warning C4018: '<' : signed/unsigned mismatch
+F:\Dev\PB32\PBSess\REPLYMSG.CPP(134) : warning C4018: '<' : signed/unsigned mismatch
+RUNPEX.CPP
+SELLANG.CPP
+Generating Code...
+F:\Dev\PB32\PBSess\READMSG.CPP(304) : warning C4700: local variable 'orgmsg' used without having been initialized
+Compiling...
+SETAREA.CPP
+SHELL.CPP
+SHOWANS.CPP
+SHOWMSG.CPP
+STRVAR.CPP
+TAG.CPP
+TAG_RW.CPP
+TIMER.CPP
+UL.CPP
+USERSET.CPP
+WORDWRAP.CPP
+WRITEMSG.CPP
+Generating Code...
+Linking...
+   Creating library D:\PB32/PBSess.lib and object D:\PB32/PBSess.exp
+
+
+
+<h3>Results</h3>
+PBSess.dll - 0 error(s), 5 warning(s)
+</pre>
+</body>
+</html>
