@@ -1,0 +1,66 @@
+// FlagEdit.odl : type library source for OLE Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (FlagEdit.tlb) that will become a resource in
+// FlagEdit.ocx.
+
+#include <olectl.h>
+
+[ uuid(A867AB40-6E55-11D0-AC0F-00A024D40EEA), version(1.0),
+  helpstring("FlagEdit OLE Control module"), control ]
+library FLAGEDITLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CFlagEditCtrl
+
+	[ uuid(A867AB41-6E55-11D0-AC0F-00A024D40EEA),
+	  helpstring("Dispatch interface for FlagEdit Control"), hidden ]
+	dispinterface _DFlagEdit
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CFlagEditCtrl)
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CFlagEditCtrl)
+			//}}AFX_ODL_METHOD
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  Event dispatch interface for CFlagEditCtrl
+
+	[ uuid(A867AB42-6E55-11D0-AC0F-00A024D40EEA),
+	  helpstring("Event interface for FlagEdit Control") ]
+	dispinterface _DFlagEditEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CFlagEditCtrl)
+			[id(DISPID_CLICK)] void Click();
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CFlagEditCtrl
+
+	[ uuid(A867AB43-6E55-11D0-AC0F-00A024D40EEA),
+	  helpstring("FlagEdit Control"), control ]
+	coclass FlagEdit
+	{
+		[default] dispinterface _DFlagEdit;
+		[default, source] dispinterface _DFlagEditEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+};
