@@ -1,0 +1,76 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PBNode - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo".\Release/PBNode.res" /d "NDEBUG" /d "_AFXDLL" "F:\Dev\PB32\PBNode\PBNode.rc"" 
+Creating temporary file "D:\TEMP\RSPD0.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\GCPP300\H" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp".\Release/PBNode.pch" /Yu"stdafx.h" /Fo".\Release/" /Fd".\Release/" /FD /c 
+"F:\Dev\PB32\PBNode\bufsock.cpp"
+"F:\Dev\PB32\PBNode\gfcomsock.cpp"
+"F:\Dev\PB32\PBNode\PBFrWnd.cpp"
+"F:\Dev\PB32\PBNode\PBNode.cpp"
+"F:\Dev\PB32\PBNode\pbthread.cpp"
+"F:\Dev\PB32\PBNode\PBWND.CPP"
+"F:\Dev\PB32\PBNode\rcvthread.cpp"
+"F:\Dev\PB32\PBNode\SCRNBUF.CPP"
+"F:\Dev\PB32\PBNode\serial.cpp"
+"F:\Dev\PB32\PBNode\THREAD.CPP"
+"F:\Dev\PB32\PBNode\TTYWND.CPP"
+]
+Creating command line "cl.exe @D:\TEMP\RSPD0.tmp" 
+Creating temporary file "D:\TEMP\RSPD1.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\GCPP300\H" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp".\Release/PBNode.pch" /Yc"stdafx.h" /Fo".\Release/" /Fd".\Release/" /FD /c 
+"F:\Dev\PB32\PBNode\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\TEMP\RSPD1.tmp" 
+Creating temporary file "D:\TEMP\RSPD2.tmp" with contents
+[
+\GCPP300\MSVC40\CPFWM.LIB \DEV\PB32\PBSESS\RELEASE\PBSESS.LIB /nologo /subsystem:windows /incremental:no /pdb:"D:\PB32/PBNode.pdb" /machine:I386 /out:"D:\PB32/PBNode.exe" 
+.\Release\bufsock.obj
+.\Release\gfcomsock.obj
+.\Release\PBFrWnd.obj
+.\Release\PBNode.obj
+.\Release\pbthread.obj
+.\Release\PBWND.OBJ
+.\Release\rcvthread.obj
+.\Release\SCRNBUF.OBJ
+.\Release\serial.obj
+.\Release\StdAfx.obj
+.\Release\THREAD.OBJ
+.\Release\TTYWND.OBJ
+.\Release\PBNode.res
+]
+Creating command line "link.exe @D:\TEMP\RSPD2.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+bufsock.cpp
+gfcomsock.cpp
+PBFrWnd.cpp
+PBNode.cpp
+pbthread.cpp
+PBWND.CPP
+rcvthread.cpp
+SCRNBUF.CPP
+serial.cpp
+THREAD.CPP
+TTYWND.CPP
+Generating Code...
+Linking...
+LINK : warning LNK4098: defaultlib "LIBCMT" conflicts with use of other libs; use /NODEFAULTLIB:library
+
+
+
+<h3>Results</h3>
+PBNode.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>
