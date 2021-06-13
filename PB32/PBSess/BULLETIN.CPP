@@ -7,7 +7,8 @@ mShowBulletin(char *data)
 {
    char fname[9];
 
-   for(int i=0;data[i]==' ';i++) {}
+   int i;
+   for(i=0;data[i]==' ';i++) {}
 
    char *s = &data[i];
    for(;data[i] && data[i]!=' ';i++) {}

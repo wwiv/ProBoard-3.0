@@ -402,7 +402,8 @@ ProcessUploads(TpProtocol& p , char *dir , QLinkedList<QString>& uploads , bool 
 
          _TpPrivateFile pvt;
 
-         for(int rec=0;;rec++)
+         int rec;
+         for(rec=0;;rec++)
          {
             if(f.read(&pvt,sizeof(pvt))!=sizeof(pvt)) break;
 

@@ -378,7 +378,7 @@ class TpMessage
 
    void createMsgTextFile(char *fname , bool append);
    void createMsgTextString(char *string , unsigned maxsize);
-   void export(char *fname);
+   void exportMsg(char *fname);
    void forward();
    void move();
 

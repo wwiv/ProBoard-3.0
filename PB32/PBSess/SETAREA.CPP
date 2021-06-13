@@ -18,8 +18,8 @@ mSelectMessageArea(char *data)
    QBitArray arealist(10000,1);
 
    int npara = ParseData(data,param);
-
-   for(int i=0;i<npara;i++)
+   int i;
+   for(i=0;i<npara;i++)
    {
       param[i].upperCase();
 
@@ -84,7 +84,9 @@ mSelectMessageArea(char *data)
 
       EnableStop();
 
-      for(int i=1,count=0;i<=TpMsgArea::highAreaNum();i++)
+      int i;
+      int count;
+      for(i=1,count=0;i<=TpMsgArea::highAreaNum();i++)
       {
          QString newmail = " ";
 
@@ -92,7 +94,8 @@ mSelectMessageArea(char *data)
 
          if(group && !ma.allGroups)
          {
-            for(int g=0;g<4;g++)
+           int g;
+            for(g=0;g<4;g++)
             {
                if(ma.groups[g] == group)
                   break;
@@ -203,7 +206,9 @@ for(bool shown=FALSE;;shown=TRUE)
    LineCounter(3);
    EnableStop();
 
-   for(int i=1,count=0;i<=TpFileArea::highAreaNum();i++)
+   int i;
+   int count;
+   for(i=1,count=0;i<=TpFileArea::highAreaNum();i++)
      {
       if(!arealist[i] || !fa.read(i)) continue;
 
@@ -211,7 +216,8 @@ for(bool shown=FALSE;;shown=TRUE)
 
       if(group && !fa.allGroups)
       {
-         for(int g=0;g<4;g++)
+        int g;
+         for(g=0;g<4;g++)
          {
             if(fa.groups[g] == group)
                break;
@@ -262,7 +268,9 @@ mSelectFileGroup(char *)
    LineCounter(3);
    EnableStop();
 
-   for(int i=1,count=0;;i++)
+   int i;
+   int count;
+   for(i=1,count=0;;i++)
    {
       if(f.read(&group,sizeof(group)) != sizeof(group))
          break;
@@ -321,8 +329,9 @@ mSelectMsgAreaGroup(char *)
 
    LineCounter(3);
    EnableStop();
-
-   for(int i=1,count=0;;i++)
+   int i;
+   int count;
+   for(i=1,count=0;;i++)
    {
       if(f.read(&group,sizeof(group)) != sizeof(group))
          break;

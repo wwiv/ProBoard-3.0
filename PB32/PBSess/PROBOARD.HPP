@@ -258,7 +258,7 @@ extern char *DateFormats[3];
 extern bool registered;
 
 extern QString (*pControlCodeHandler) (BYTE,BYTE,int width,QString::justification);
-extern bool     (*pLineCountHandler  ) (int init = -1);
+extern bool     (*pLineCountHandler  ) (int);
 
 
 

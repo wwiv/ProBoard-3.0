@@ -15,7 +15,8 @@ mSelectLanguage(char *data)
 
    QDirScan scan(QFileName(SysPath,"*.PBL"));
 
-   for(int i = 0; int(scan.operator int()) ; scan++ , i<MAX_LANGUAGES)
+   int i;
+   for(i = 0; int(scan.operator int()) ; scan++ , i<MAX_LANGUAGES)
    {
       if(QString(scan.name()) == QString("_DEFAULT.PBL"))
          continue;

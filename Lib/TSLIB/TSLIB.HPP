@@ -134,9 +134,9 @@ extern "C"
    {
       /*** Constants for File::seek() ***/
 
-      const seek_set           = 0;
-      const seek_cur           = 1;
-      const seek_end           = 2;
+      const int seek_set           = 0;
+      const int seek_cur           = 1;
+      const int seek_end           = 2;
    }
 
 bool	get_ini_var(const char *fname,const char *varname,char *var,int max);
@@ -206,8 +206,10 @@ class QString
       void operator+=(const char *);
       void operator+=(char);
 
-      int operator==(const char *str) const;
+      int stricmp(const char* str) const;
+      int operator==(const char* str) const;
       int operator==(const QString& str) const;
+      
       int operator!=(const char *str) const;
       int operator!=(const QString& str) const;
 
@@ -457,13 +459,13 @@ class QFileName : public QString
    void fit(int size);
   };
 
-const DIR_NORMAL = 0x00;
-const DIR_RDONLY = 0x01;
-const DIR_HIDDEN = 0x02;
-const DIR_SYSTEM = 0x04;
-const DIR_LABEL  = 0x08;
-const DIR_DIREC  = 0x10;
-const DIR_ARCH   = 0x20;
+const int DIR_NORMAL = 0x00;
+const int DIR_RDONLY = 0x01;
+const int DIR_HIDDEN = 0x02;
+const int DIR_SYSTEM = 0x04;
+const int DIR_LABEL  = 0x08;
+const int DIR_DIREC  = 0x10;
+const int DIR_ARCH   = 0x20;
 
 class QDirScan
   {

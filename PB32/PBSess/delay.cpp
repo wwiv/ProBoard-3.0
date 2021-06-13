@@ -1,4 +1,6 @@
-#include <windows.h>
+//#include <windows.h>
+
+extern void Sleep(unsigned long);
 
 void
 Delay(int msecs)

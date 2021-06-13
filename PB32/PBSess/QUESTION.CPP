@@ -72,7 +72,7 @@ for(;;)
     adjust_parms(str,param);
     for(i=0;i<NUMCOMMANDS;i++)
           {
-          if(param[0]==commands[i])
+          if(param[0].stricmp(commands[i]))
              {
              switch(i)
                {
@@ -134,7 +134,7 @@ for(;;)
                          {
                           if(!qf.readLine(str,299)) return 1;
                           adjust_parms(str,param);
-                         } while(param[0] != commands[8]);
+                         } while(!param[0].stricmp(commands[8]));
                         } break;
                case 10: {
                          char c = WaitKeys(param[1]);

@@ -41,7 +41,7 @@ SelectProtocol(TpProtocol& p , char protocol_key , bool seldef)
       if(k=='-')
          return FALSE;
 
-      for(i=0;i<hotkeys.len();i++)
+      for(int i=0;i<hotkeys.len();i++)
          if(k==hotkeys[i])
          {
             p.Read(i+1);

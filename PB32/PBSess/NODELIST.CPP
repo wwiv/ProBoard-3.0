@@ -40,7 +40,8 @@ getnode(char *temp,NodeListEntry& n)
    char *options[]={"ZONE","REGION","HOST","HUB","PVT","DOWN","HOLD"};
    char slices[6][100];
 
-   for(int i=0;i<6;i++)
+   int i;
+   for(i=0;i<6;i++)
    {
       int y=0;
       while (*temp != ',')
@@ -59,6 +60,7 @@ getnode(char *temp,NodeListEntry& n)
       slices[i][y] = '\0';
     }
 
+   int io;
    for(i=0;i<7;i++) if(!strcmpl(slices[0],options[i])) break;
 
    n.type=i+1;

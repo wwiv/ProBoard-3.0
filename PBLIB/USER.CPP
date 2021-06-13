@@ -293,7 +293,7 @@ _TpUser::CheckAccess(WORD lv,TpAccessFlags fl,TpAccessFlags notfl)
          if(!aFlags.getflag(i))
             return false;
 
-    for(i=1;i<=32;i++)
+    for(int i=1;i<=32;i++)
       if(notfl.getflag(i))
          if(aFlags.getflag(i) )
             return false;

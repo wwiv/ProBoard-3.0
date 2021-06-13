@@ -5,7 +5,8 @@
 void
 mCombinedSelect(char *data)
 {
-   TpMsgArea ma;
+  int count = 0;
+  TpMsgArea ma;
    bool mailcheck = FALSE;
 
    if(QString(data) == QString("/M")) mailcheck = TRUE;

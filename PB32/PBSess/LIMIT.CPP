@@ -17,7 +17,8 @@ AdjustLimits()
             Limit[j] = temp;
          }
 
-   for(int n=-1;;)
+   int n;
+   for(n=-1;;)
    {
       for(i=NumLimits-1;i>=0;i--)
          if(user.level>=Limit[i].level)

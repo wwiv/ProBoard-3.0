@@ -335,8 +335,8 @@ Login()   // 0 -> ok   -1 -> User violation
          {
             WORD oldlevel = user.level;
             user.level   = user.expLevel;
-
-            for(int f=1;f<=32;f++)
+            int f;
+            for(f=1;f<=32;f++)
                if(user.expFlagsOn.getflag(f))
                   user.aFlags.setflag(f);
 

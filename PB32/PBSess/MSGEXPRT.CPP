@@ -6,7 +6,7 @@
 const int text_bufsize = 512;
 
 void
-TpMessage::export(char *fname)
+TpMessage::exportMsg(char *fname)
 {
    QFile outf;
 

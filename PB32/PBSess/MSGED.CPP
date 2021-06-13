@@ -334,7 +334,9 @@ msglines::rebuild()
 {
    QString tmpline[60];
 
-   for(int i=0,l=0;i<n;i++)
+   int i;
+   int l;
+   for(i=0,l=0;i<n;i++)
    {
       QString wrap;
 

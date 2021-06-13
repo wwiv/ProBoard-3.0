@@ -510,7 +510,7 @@ SendFile(char *fn,char *hotkeys)
             case 10: io << input;
                      if(moreok)
                         if(pLineCountHandler)
-                           if((*pLineCountHandler)())
+                           if((*pLineCountHandler)(-1))
                               return 1;
                      break;
             case 11: kflag      = true;

@@ -82,7 +82,8 @@ filelist_more()
 
          for(i=0;i<tagged.len();i++)
          {
-            for(int j=0; tag_chars[j] ; j++)
+           int j;
+            for(j=0; tag_chars[j] ; j++)
             {
                if(tagged[i] == tag_chars[j]) break;
             }
@@ -91,7 +92,7 @@ filelist_more()
 
             if(j+1 > num_local_tags) continue;
 
-            if(!IsTagged(local_tags[j].name , local_tags[j].area))
+            if(!IsTagged(local_tags[j].name, local_tags[j].area))
                TagList.add(local_tags[j]);
          }
 
@@ -147,7 +148,8 @@ first_nonblank( char *line )
 
    if(is_whitespace(*line))
    {
-      for(int i=0 ; line[i] != '\0' && is_whitespace(line[i]) ; i++) {}
+     int i;
+      for(i=0 ; line[i] != '\0' && is_whitespace(line[i]) ; i++) {}
 
       f = line[i];
    }
@@ -291,7 +293,8 @@ mKeywordSearch(char *data)
 
       if(group && !fa.allGroups)
       {
-         for(int g=0;g<4;g++)
+        int g;
+         for(g=0;g<4;g++)
          {
             if(fa.groups[g] == group)
                break;
@@ -492,7 +495,8 @@ mNewFileSearch(char *data)
 
       if(group && !fa.allGroups)
       {
-         for(int g=0;g<4;g++)
+        int g;
+         for(g=0;g<4;g++)
          {
             if(fa.groups[g] == group)
                break;
@@ -511,7 +515,8 @@ mNewFileSearch(char *data)
       }
 
       QDirScan find(QFileName(fa.filePath,"*.*"));
-      for(int num_new=0;int(find) && num_new<MAX_NEWFILES;find++)
+      int num_new;
+      for(num_new=0;int(find) && num_new<MAX_NEWFILES;find++)
       {
          if(find.date() >= cmpdate)
             strcpy(newf[num_new++].name,find.name());
@@ -541,7 +546,8 @@ mNewFileSearch(char *data)
             getfname(line,file);
             strupr(file);
 
-            for(int i=0;i<num_new;i++)
+            int i;
+            for(i=0;i<num_new;i++)
                if(!strcmp(newf[i].name,file))
                   break;
 
@@ -668,7 +674,8 @@ mFileNameSearch(char *data)
 
       if(group && !fa.allGroups)
       {
-         for(int g=0;g<4;g++)
+        int g;
+         for(g=0;g<4;g++)
          {
             if(fa.groups[g] == group)
                break;

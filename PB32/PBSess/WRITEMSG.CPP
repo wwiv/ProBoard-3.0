@@ -16,6 +16,7 @@ mWriteMsg(char *data)
    bool to_specified = FALSE;
    bool subj_specified = FALSE;
    char netmail_address[30] = "";
+   int count = 0;
 
    ParseData(data,param);
 

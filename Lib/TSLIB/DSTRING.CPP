@@ -230,27 +230,33 @@ operator+(const char *s1,const QString& s2)
 }
 
 int
-QString::operator==(const char *str) const
+QString::operator==(const char* str) const
 {
-   return !stricmp(s,str);
+  return !::stricmp(s, str);
+}
+
+int
+QString::stricmp(const char* str) const
+{
+  return !::stricmp(s, str);
 }
 
 int
 QString::operator==(const QString& str) const
 {
-   return !stricmp(s,str.s);
+   return !::stricmp(s,str.s);
 }
 
 int
 QString::operator!=(const char *str) const
 {
-   return stricmp(s,str);
+   return ::stricmp(s,str);
 }
 
 int
 QString::operator!=(const QString& str) const
 {
-   return stricmp(s,str.s);
+   return ::stricmp(s,str.s);
 }
 
 void
@@ -274,8 +280,8 @@ QString::del(int pos,int l)
    if(pos < _len)
    {
       char *p = s;
-
-      for(int i=0;i<pos;i++)
+      int i;
+      for(i=0;i<pos;i++)
          *p++ = s[i];
 
       if(l)
@@ -469,7 +475,8 @@ QString::replace(const char *search,const char *replace,bool sens,int maxcount)
    int l = _len - search_len + 1;
    QString result;
 
-   for(int i = 0; i < l; i++)
+   int i;
+   for(i = 0; i < l; i++)
    {
       if(   ( sens && !memcmp (&s[i] , search , search_len))
          || (!sens && !memicmp(&s[i] , search , search_len))

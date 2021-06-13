@@ -9,7 +9,7 @@ mReadMessages(char *data)
 {
    TpMsgArea ma ,
              reply_area;
-   long orgmsg;
+   long orgmsg = 0;
    QString param[10];
    int searchmethod = 0;
    int searchorder  = 0;
@@ -581,7 +581,7 @@ mReadMessages(char *data)
 
          io << '\n';
 
-         msg.export(fn);
+         msg.exportMsg(fn);
 
          goto again;
       }
